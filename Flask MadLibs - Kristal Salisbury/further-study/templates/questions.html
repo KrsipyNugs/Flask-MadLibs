@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+  <title>Madlibs</title>
+</head>
+<body>
+  <h1>Questions for {{ title }}</h1>
+  <form action="/story">
+      <p>Prompt:
+        <input name="{{ prompt }}">
+      </p>
+    <input type="hidden" name="story_id" value="{{ story_id}}">
+    <button>Submit</button>
+  </form>
+</body>
+</html>
